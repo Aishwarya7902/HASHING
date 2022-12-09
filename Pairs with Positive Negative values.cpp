@@ -1,6 +1,6 @@
 PROBLEM: https://practice.geeksforgeeks.org/problems/pairs-with-positive-negative-values3719/1
 
-VIDEO:https://youtu.be/hCGUty76A6M
+VIDEO(PRINCE BHAIYA):https://youtu.be/hCGUty76A6M
 
 /*
 METHOD 1 (OWN)
