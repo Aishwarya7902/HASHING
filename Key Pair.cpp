@@ -32,3 +32,30 @@ public:
 	    return false;
 	}
 };
+
+
+/*
+METHOD 2 (USING SET)
+TC:
+SC:
+*/
+
+
+class Solution{
+public:	
+	// Function to check if array has 2 elements
+	// whose sum is equal to the given value
+	bool hasArrayTwoCandidates(int arr[], int n, int x) {
+	    // code here
+	    unordered_set<int>s;
+	    for(int i=0;i<n;i++){
+	        if(s.count(x-arr[i])){
+	            return true;
+	        }
+	        else{
+	            s.insert(arr[i]);
+	        }
+	    }
+	    return false;
+	}
+};
