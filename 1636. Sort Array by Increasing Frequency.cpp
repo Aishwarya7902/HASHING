@@ -41,7 +41,8 @@ public:
 };
 
 /*
-METHOD 2:
+METHOD 2: 
+LEARNING 🔥🔥 :learnt lambda function
 TC:
 SC:
 */
