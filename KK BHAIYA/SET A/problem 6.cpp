@@ -34,7 +34,33 @@ Output: true
   
   /*
   BRUTE FORCE
-  TC:
+  TC: O(n^2)
   SC:
   */
+#include <iostream>
+using namespace std;
+
+bool checkDuplicatesWithinK(int arr[], int n, int k)
+{
+    
+ for(int i=0; i<n ;i++)//outer loop
+	  {
+	      for(int j=i+1; j<=i+k&&j<n; j++)//inner loop
+	      {
+	          if(arr[i]==arr[j]){   
+	              if((j-i)<=k)return true;
+	          }
+	      }
+	  }
+	  return false;
+}
+
+int main() {
+    int arr[] = {10, 5, 3, 4, 3, 5, 6};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    if (checkDuplicatesWithinK(arr, n, 3))
+        cout << "Yes";
+    else
+        cout << "No";
+}
   
