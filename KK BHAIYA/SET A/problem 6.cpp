@@ -34,6 +34,11 @@ Output: true
   
   /*
   BRUTE FORCE
+  pseudo code:
+  1.simply run two for loops .
+  2.outer loop picks up every element as the first element
+  3.inner loop compares all elements which are within k distance of ‘arr[i]’
+  
   Time complexity: O(k*n)
   Space complexity: O(1)
   */
