@@ -37,6 +37,7 @@ INTUITION:
 2.take an unordered map
 3.if k-arr[i] is already present in map,then cnt+=mp[k-arr[i]]
 4.put current element in map as it can be used in  future by someone else
+5.return cnt
 
 */
 
