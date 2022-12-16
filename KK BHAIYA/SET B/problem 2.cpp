@@ -36,6 +36,15 @@ int main() {
 using hashing
 tc:O(N)
 sc:O(N)
+INTUITION
+1. use a map to store the prefixSum ending at the ith index
+2. store current prefix sum till ith index
+3. store minimum size subarray whose sum is K.
+4. Check if the current prefix sum is equals to K
+5. required prefix sum
+6. check if there exists any required Prefix Sum
+7. store the current prefix sum ending at i
+8.return result
 */
 
 #include <bits/stdc++.h>
@@ -52,6 +61,7 @@ int smallestSubarraySumK(vector<int>&arr,int k){
     long long result=INT_MAX;
     for(int i=0;i<n;i++){
         currPrefixSum+=arr[i];
+	    // Check if the current prefix sum is equals to K
         if(currPrefixSum==k){
             long long currlen=i+1;
             result=min(result,currlen);
