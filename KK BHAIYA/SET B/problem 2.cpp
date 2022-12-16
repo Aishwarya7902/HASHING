@@ -31,3 +31,52 @@ int main() {
 	cout<<minSize(v1,5);
 	return 0;
 }
+
+/*
+using hashing
+tc:O(N)
+sc:O(N)
+*/
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int smallestSubarraySumK(vector<int>&arr,int k){
+    //use a map to store the prefixSum ending at the ith index
+    unordered_map<long long ,int>mp;
+    int n=arr.size();
+    //store current prefix sum till ith index
+    long long currPrefixSum=0;
+    
+    //store minimum size subarray whose sum is K.
+    long long result=INT_MAX;
+    for(int i=0;i<n;i++){
+        currPrefixSum+=arr[i];
+        if(currPrefixSum==k){
+            long long currlen=i+1;
+            result=min(result,currlen);
+            
+        }
+        //required prefix sum
+        long long requiredPrefixSum=currPrefixSum-k;
+        //check if there exists any required Prefix Sum
+        if(mp.count(requiredPrefixSum)){
+            long long foundIdx=mp[requiredPrefixSum];
+            long long currIdx=i;
+            result=min(result,currIdx-foundIdx);
+        }
+        // store the current prefix sum ending at i
+        mp[currPrefixSum]=i;
+    }
+    if(result>=INT_MAX)return -1;
+    return result;
+    
+}
+
+int main() {
+    vector<int>v={2, 4, 6, 10, 2, 1};
+    vector<int>v1={-8, -8, -3, 8};
+	cout<<smallestSubarraySumK(v,12)<<endl;;
+	cout<<smallestSubarraySumK(v1,5);
+	return 0;
+}
