@@ -1,5 +1,5 @@
 PROBLEM:https://leetcode.com/problems/continuous-subarray-sum/
-VIDEO:
+VIDEO: https://www.youtube.com/watch?v=2K92SzwNaPg
 
 /*
 BRUTE FORCE:
@@ -29,6 +29,7 @@ public:
 USING HASHING
 TC:O(N)
 SC:O(N)
+FOR PSEUDO CODE....BETTER SEE THE SOLUTION VIDEO
 */
 class Solution {
 public:
