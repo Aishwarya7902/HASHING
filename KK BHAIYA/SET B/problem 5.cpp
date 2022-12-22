@@ -7,6 +7,9 @@ BRUTE FORCE
 TC: O(n^2)
 SC: O(1)
 PSEDO CODE
+1.form all possible subarrays
+2.if sum of that subarray is divisible by k cnt++
+3.return count
 */
 
 class Solution {
