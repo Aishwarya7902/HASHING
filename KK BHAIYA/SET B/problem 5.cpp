@@ -3,8 +3,8 @@ VIDEO:
 
 /*
 BRUTE FORCE
-TC:
-SC:
+TC: O(n^2)
+SC: O(1)
 PSEDO CODE
 */
 
