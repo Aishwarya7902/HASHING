@@ -1,5 +1,6 @@
 PROBLEM:https://leetcode.com/problems/subarray-sums-divisible-by-k/description/
 VIDEO:
+VERY HELPFUL BLOG:https://leetcode.com/problems/subarray-sums-divisible-by-k/solutions/413234/detailed-whiteboard-beats-100-do-you-really-want-to-understand-it/?orderBy=most_votes
 
 /*
 BRUTE FORCE
