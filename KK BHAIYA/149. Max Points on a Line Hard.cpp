@@ -5,6 +5,9 @@ BLOG:https://leetcode.com/problems/max-points-on-a-line/solutions/1739295/simple
 METHOD 1:
 TC:O(n^3)
 SC:
+pseudo code:
+take 2 points and find its slope now for every other point apart from these two points ,if they have same slope as the points take then they will 
+lie on this point,hence count++
 */
 
 class Solution {
