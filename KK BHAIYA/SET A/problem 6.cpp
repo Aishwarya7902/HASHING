@@ -1,7 +1,8 @@
 PROBLEM:  https://www.desiqna.in/part-7
 Problem: Check if the following given array contains duplicate elements within k distance from each other.
 
-Given an unsorted array that may contain duplicates. Also given a number k which is smaller than the size of the array, returns true if the array contains duplicates within k distance.
+Given an unsorted array that may contain duplicates. Also given a number k which is smaller than the size of the array, 
+returns true if the array contains duplicates within k distance.
 
 
 
